@@ -62,9 +62,10 @@ $(document).ready(function() {
 	
 	//create a function (algorithm) called "war" that takes two cards as parameters, compares them and returns a winner. A tie should return false.
 	// war(opponent_1.pop(), opponent_2.pop())
-			var card1 = cards_player_1[0];
-			var card2 = cards_player_2[0];
+
 	function war() {
+					var card1 = cards_player_1[0];
+			var card2 = cards_player_2[0];
 				if (card1.number > card2.number){return "Opponent"}
 				else if (card1.number < card2.number){return "Me"}
 				else if (card1.number === card2.number){return "false"}
@@ -76,6 +77,8 @@ $(document).ready(function() {
 		//compare the cards
 		//give the winner both cards (at end of deck)
 	function play() {
+					var card1 = cards_player_1[0];
+			var card2 = cards_player_2[0];
 	
 		if(war() === "Opponent") {
 			cards_player_1.push(card1, card2);

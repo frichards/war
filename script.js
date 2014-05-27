@@ -64,7 +64,7 @@ $(document).ready(function() {
 	// war(opponent_1.pop(), opponent_2.pop())
 
 	function war() {
-					var card1 = cards_player_1[0];
+			var card1 = cards_player_1[0];
 			var card2 = cards_player_2[0];
 				if (card1.number > card2.number){return "Opponent"}
 				else if (card1.number < card2.number){return "Me"}
@@ -77,7 +77,7 @@ $(document).ready(function() {
 		//compare the cards
 		//give the winner both cards (at end of deck)
 	function play() {
-					var card1 = cards_player_1[0];
+			var card1 = cards_player_1[0];
 			var card2 = cards_player_2[0];
 	
 		if(war() === "Opponent") {
